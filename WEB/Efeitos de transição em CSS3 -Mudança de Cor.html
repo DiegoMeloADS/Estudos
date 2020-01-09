@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>Efeitos de transição em CSS3</title>
+<style type="text/css">
+<!-- /* criação da forma e a transição dela na propriedade transition*/ -->
+body > div{
+
+	width:483px;
+	height:298px;
+	background:#676470;
+	transition:all 0.3s ease;
+}
+<!-- /*animação e o efeito inicial e o hover com a mudança*/ -->
+.fade{
+
+ opacity:0.5;
+ 
+}
+.fade:hover{
+
+	background:#53a7ea;
+}
+</style>
+</head>
+<body>
+<!-- /* aqui criamos a div em forma de classe, para que no css3 possamos edita-la para conseguirmos o efeito fade in *\ -->
+<div class="fade"></div>
+</body>
+</html>

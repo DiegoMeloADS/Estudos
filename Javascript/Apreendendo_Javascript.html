@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>Javascript</title>
+<style>
+h1{
+text-transform:capitalize;
+}
+</style>
+<script language="javascript" type="text/javascript">
+function validar(){
+var nome = form1.nome.value;
+var senha = form1.senha.value;
+var rep_senha =form1.rep_senha.value;
+var CPF =form1.CPF.value;
+
+if (nome.length < 5) {
+alert('Digite seu nome completo');
+form1.nome.focus();
+return false;
+}
+if(senha==""){
+alert('você esqueceu de preencher o campo da senha,por favor preencha denovo');
+form1.senha.focus;
+return false;
+}
+
+if(rep_senha == ""){
+alert('você esqueceu de confirmar a senha por favor prencha o campo');
+form1.rep_senha.focus;
+return false;
+}
+if(rep_senha != senha || rep_senha == ""){
+alert('as senhas digitadas não são iguais.');
+form1.rep_senha.focus;
+return false;
+}
+if(CPF.length < 15){
+alert('Digite 15 digitos do seu CPF');
+form1.CPF.focus;
+return false;
+}
+}
+</script>
+</head>
+<body>
+<fieldset><legend><h1>formulario</h1></legend>
+<form name="form1" action="enviar.php" method="post">
+Nome:<input type="text" size="30" maxlength="50" name="nome" placeholder="Escreva seu Nome Completo"><br><br>
+Senha:<input type="password" size="20" maxlength="50" name="senha" Placeholder="digite sua senha"><br><br>
+Confirmar senha:<input type="password" size="20" maxlength="50" name="rep_senha" placeholder="confirme a sua senha"><br><br>
+CPF:<input type="numeric" size="20" maxlength="50" name="CPF" placeholder="Digite seu cpf"><br><br>
+Enviar<input type="submit" onclick="return validar()" name="Enviar">
+</form>
+</fieldset>
+</body>
+</html>

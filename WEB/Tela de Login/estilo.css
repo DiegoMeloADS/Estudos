@@ -1,0 +1,122 @@
+body{
+	margin:0px;
+	padding:0px;
+	font-family:sans-serif;
+	/*Adicionando um fundo com cores degrades*/
+}
+#cubo{
+	width:100%;
+	height:100%;
+	background:-moz-linear-gradient(top,#8C52CF,#D05CE8,#FC6633);
+	position:relative;
+} 
+/*quadrado da tela de login*/
+#quadrado{
+	position:absolute;
+	/*Dimensões do quadrado altura e largura*/
+	width:30%;
+	height:45%;
+	background:white;
+/*posição do quadrado na tela*/
+	margin-left:37%;
+	margin-top:15%;
+	/*Cor da borda e a grossura*/
+	border:3px solid, #FFF;
+	border-radius:10px;
+}
+/*titulo login*/ 
+h3{
+	
+	text-align:center;
+	margin-top:50px;
+	font-size:25px;
+} 
+/*botao de login*/
+#botao{
+	position:absolute;
+	height:35px;
+	width:300px;
+	margin-top:50px;
+	margin-left:33px;
+	background:-moz-linear-gradient(left,#8C52CF,#D05CE8,#FC6633);
+	border-color:#FFFFFF;
+	border-radius:10px;
+	color:#000000;
+	font-weight:lighter;
+	font-size:15px;
+	
+
+} 
+/* Texto de login do botão*/
+h2{
+	
+	margin-top:7px;
+	margin-left:125px;
+	font-size:15px;
+}
+/*Mexendo na caixa de usuário*/
+#js_usuario{ 
+     
+	/*sem fundo*/
+	background:none;
+	border:0;
+	display:block;
+	/*posicionamento*/
+	margin-left:35px;
+	margin-top:55px;
+	/*dimensões*/
+	width:300px;
+	/*Texto dentro da caixa de usuário*/
+	text-align:center;
+	/*cor da borda e espressura*/
+	border:2px solid #3498db;
+	/*espaçamento dentro da caixa*/
+	padding:10px 14px;
+	/*cor quando estiver escrevendo dentro da caixa*/
+	outline:none;
+	color:black;
+	/*ficar com borda redonda*/
+	border-radius:24px;
+	/*animação*/
+	transition:0.25s;
+	border-color:purple;
+}
+#js_senha{
+		/*sem fundo*/
+	background:none;
+	border:0;
+	display:block;
+	/*posicionamento*/
+	margin-left:35px;
+	margin-top:20px;
+	/*dimensões*/
+	width:300px;
+	/*Texto dentro da caixa de senha*/
+	text-align:center;
+	/*cor da borda e espressura*/
+	border:2px solid #3498db;
+	/*espaçamento dentro da caixa*/
+	padding:10px 14px;
+	/*cor quando estiver escrevendo dentro da caixa*/
+	outline:none;
+	color:black;
+	/*ficar com borda redonda*/
+	border-radius:24px;
+	/*animação*/
+	transition:0.25s;
+	border-color:purple;
+} 
+#link_cadastro {
+	margin-top:13px;
+	margin-left:40px;
+	font-size:15px;
+	font-weight:bold;
+	}
+	
+a{
+	color:purple;
+} 
+#log{
+	color:#000000;
+	text-decoration:none;
+} 

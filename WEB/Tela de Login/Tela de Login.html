@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>Tela de Login</title>
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+	</head>
+	<body>
+		<div id="cubo">	
+			<div id="quadrado">
+				<h3>LOGIN</h3>
+				<form name="login" action="" method="post" onSubmit="return validar()">
+					<input type="text" placeholder="Nome de Usuário " id="js_usuario" title="Digite seu nome de usuario exemplo: @usuario">
+						<br>
+					<input type="password" placeholder="Senha" id="js_senha">
+					<h2 id="link_cadastro">Não Possui uma Conta? <a title="Clique aqui para Criar a sua Conta">Cadastre-se</a></h2>
+					<input type="submit" id="botao" value="LOGIN" title="Clique aqui para Entrar na sua Conta">
+				</form>
+				</div>
+			</div>	
+		</div>
+		<script>
+			/*objetivo: verificar os campos de nome e de senha*/
+			
+			/*Criação das variáveis*/
+			var usuario;
+			var senha;
+			
+			usuario = document.login.js_usuario.value;
+			senha = document.login.js_senha.value;
+			
+			function validar (){
+			
+			if(usuario == ''){
+			window.alert('Digite Seu Nome no Campo em Foco');
+			onfocus.js_usuario;
+			return false
+			}
+			
+			if(senha == '' ){
+			window.alert('Digite Sua Senha no Campo em Foco');
+			onfocus.js_senha;
+			return false;
+			}
+			
+			else{
+		     return true;
+			 }
+			} 
+			
+			
+		</script>
+	</body>
+</html>
