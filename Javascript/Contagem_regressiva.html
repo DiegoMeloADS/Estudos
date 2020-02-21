@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<title>18 anos do Diego</title>
+		<style>
+			body{
+			margin:0px;
+			padding:0px;
+			font-family:arial;
+			margin-top:5%;
+			
+			}
+			
+			h1{
+				text-align:center ;
+			} 
+			p{
+				text-align:center ;
+				font-weight:bold;
+			} 
+			img{
+			 margin-left:38%;
+			 height:500px;
+			 width:500px;
+			}
+		</style>
+	</head>
+	<body>
+	
+		<h1>O tempo que falta para o meu aniversário</h1>
+	
+	 <!-- Aonde sera exibido o contador-->
+		<p id="demo"></p>
+		
+		<img src="https://previews.123rf.com/images/cienpies/cienpies1605/cienpies160500051/56597694-happy-birthday-number-18-greeting-card-for-eighteen-year-in-modern-flat-line-art-with-colorful-geome.jpg">
+		
+	</body>
+</html>
+<script>
+	/*Defina a data em que estamos fazendo a contagem regressiva*/
+	var countDownDate = new Date ("March 19, 2020 17:30:00").getTime();
+	
+	/*Atualizar a contagem decrescente a cada 1 segundo*/
+	var x = setInterval (function(){
+	
+	/*obter a data e a hora de hoje*/
+	var now = new Date().getTime();
+	
+	/*encontrando a distancia entre agora e a data da contagem regressiva*/
+	var distance = countDownDate - now;
+	
+	/*Calculo do tempo entre dias, horas, minutos e segundos*/
+	var days = Math.floor (distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor ((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor ((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor ((distance % (1000 * 60)) / 1000);
+	
+	/*Mostrar o resultado no elemento com o nome "demo" */
+	document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s "; 
+	
+	/*quando o contador acabar escrever um texto*/
+	if(distance <= 0){
+		clearInterval(x);
+		document.getElementById("demo").innerHTML = "EXPIRED";
+	}
+	}, 1000);
+	
+	
+</script>
